@@ -1,0 +1,74 @@
+<%- include ("./partials/header") %>
+
+
+
+<div id="home-main-section" class="">
+<div class="row no-gutters ">
+
+  <div class="col-lg-6 left-section">
+  <div class="grid-sol mt-5">
+
+    <h3> So here is your grid</h3>
+ <br>
+    <div class="d-flex justify-content-center">
+      <table>
+      <%  for(i=0;i < noOfGrid ; i++){  %>
+      <tr>
+      <%  for(j=0;j < noOfGrid; j++){   %>
+      <% var color = Math.floor(3*(Math.random())); %>
+      <td style="background-color:<%= colorPref[color] %>;width:30px;height:30px"></td>
+      <% } %>
+      </tr>
+      <% } %>
+      </table>
+    </div>
+ <br> <br>
+    <h5>You can download it for free!!</h5>
+    <div class="download-btn">
+      <a href="#"> <button class="btn download-button">Download</button></a>
+    </div>
+      </div>
+  </div>
+
+  <div class="col-lg-6 right-section ">
+
+    <div class="title">
+      <h2>Create Your Own Grid...</h2><br>
+    </div>
+    <div class="d-flex justify-content-center">
+    <div class="grid-creator p-4">
+
+      <form action="/" method="POST">
+        <div class="form-group ">
+          <label for="numberinput">Enter N-no of rows or column of grid</label>
+          <input id="numberinput" class="form-control-sm" type="number" name="inputN" value="<%= noOfGrid %>" required autocomplete="off"> <br>
+        </div>
+        <label for="colors">Pick Colors for your Grid</label>
+        <div id="colors" class="form-row p-1">
+          <div class="col">
+          <label for="color1">1st color:</label>
+          <input id="color1" class="form-control-sm" type="color" name="color1" required value="<%= colorPref[0] %>"><br>
+        </div>
+        <div class="col">
+          <label for="color2">2nd color:</label>
+          <input id="color2" class="form-control-sm" type="color" name="color2" required value="<%= colorPref[1] %>"><br>
+        </div>
+        <div class="col">
+          <label for="color3">3rd color:</label>
+          <input id="color3" class="form-control-sm" type="color" name="color3" required value="<%= colorPref[2] %>"><br>
+        </div>
+        </div>
+        <div class="submit-btn m-3">
+          <button class="btn" type="submit">Submit</button>
+        </div>
+      </form>
+
+    </div>
+    </div>
+
+  </div>
+
+</div>
+</div>
+
+<%- include ("./partials/footer") %>
