@@ -1,6 +1,7 @@
+@import "./responsive.css";
+
 body{
   padding: 0;
-
 }
 
 /* home page */
@@ -15,44 +16,35 @@ body{
   color: #6beffb;
   display: flex;
   justify-content: center;
-  height: 100vh;
-
 }
 .grid{
   width: 85%;
   padding: 2% 0;
 }
 .grid img{
-  width:  250px;
-  height: 150px;
   border-radius: 20px;
-}
+  }
 .grid h1{
-  font-size: 3rem!important;
   font-family: 'Courgette', cursive;
-  line-height: 2.5;
-  margin: 10px 0;
+  margin: 0!important;
 }
+
 
 /* Right section */
 .right-section{
   background-color: #f0f0f3;
   color: #000421;
   text-align: center;
-  padding: 40px 20px
 }
 .right-section h2{
   font-family: 'Heebo', sans-serif;
-  font-size: 2.2rem;
   line-height: 2.5;
 }
 .right-section h2:before{
   content: "";
   height: 2px;
-  width: 50px;
   background-color: #6beffb;
   position: absolute;
-  top: 115px;
   margin: auto;
   left: 0;
   right: 0;
@@ -60,7 +52,6 @@ body{
 .grid-creator{
   text-align: left;
   width: 70%;
-  /* height: 200px; */
   border-radius: 30px;
   background: #ffffff;
   box-shadow:  21px 21px 51px #cfcfcf,
