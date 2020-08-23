@@ -28,6 +28,8 @@ app.get("/grid",function(req,res){
   colors = [];
 });
 
-app.listen("3000", function() {
-  console.log("Server started sucessfully on PORT 3000");
+
+
+app.listen(process.env.Port||"3000", function() {
+  console.log("Server has started sucessfully");
 });
