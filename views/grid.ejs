@@ -11,16 +11,18 @@
     <h3> So here is your grid</h3>
  <br>
     <div class="d-flex justify-content-center">
-      <table>
+      <div class="table-responsive" style="height:300px;width:300px">
+      <table class="table">
       <%  for(i=0;i < noOfGrid ; i++){  %>
       <tr>
       <%  for(j=0;j < noOfGrid; j++){   %>
       <% var color = Math.floor(3*(Math.random())); %>
-      <td style="background-color:<%= colorPref[color] %>;width:30px;height:30px"></td>
+      <td style="background-color:<%= colorPref[color] %>;width:5px;height:5px"></td>
       <% } %>
       </tr>
       <% } %>
       </table>
+    </div>
     </div>
  <br> <br>
     <h5>You can download it for free!!</h5>
