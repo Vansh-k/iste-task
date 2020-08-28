@@ -1,87 +1,100 @@
 /* home section */
-
 /* left-section */
 @media only screen and (max-width: 600px) {
   .grid img {
     height: 80px;
-    width:  150px;
+    width: 150px;
     margin: 15px 0 0;
   }
+
   .grid h1 {
     line-height: 2.5;
-    font-size: 2rem!important;
+    font-size: 2rem !important;
   }
-  .grid h5{
-    font-size: 1.1rem!important;
-   }
-  .grid p{
+
+  .grid h5 {
+    font-size: 1.1rem !important;
+  }
+
+  .grid p {
     font-size: .8rem;
-    margin: 10px 0 ;
+    margin: 10px 0;
   }
 }
 
 @media only screen and (min-width: 600px) {
-  .left-section{
+  .left-section {
     height: 100vh;
   }
+
   .grid img {
     height: 150px;
-    width:  250px;
+    width: 250px;
     margin: 30px 0px 20px;
   }
+
   .grid h1 {
     line-height: 2.5;
-    font-size: 3rem!important;
+    font-size: 3rem !important;
   }
-  .grid p{
+
+  .grid p {
     margin: 20px 0;
   }
 }
 
 /* right-section */
-
 @media only screen and (max-width: 600px) {
-  .right-section{
-    padding: 10px 5px
-  }
-  .right-section h2{
+  .right-section h2 {
     font-size: 1.5rem;
   }
-  .right-section h2:before{
+
+  .right-section h2:before {
     width: 30px;
     top: 60px;
   }
-  .grid-creator{
+
+  .grid-creator {
     margin: 5px 0;
     padding: 1rem 1.2rem;
   }
 }
+
 @media only screen and (min-width: 600px) {
-  .right-section{
-    padding: 40px 20px
-  }
-  .right-section h2{
+  .right-section h2 {
     font-size: 2.2rem;
   }
-  .right-section h2:before{
+
+  .right-section h2:before {
     width: 50px;
     top: 115px;
   }
-  .grid-creator{
+
+  .grid-creator {
     margin: 25px 0;
     padding: 1.5rem;
   }
 }
 
 /* grid section */
-
 @media only screen and (max-width: 600px) {
-  .grid-sol{
-    padding:  1rem;
+  .grid-sol {
+    padding: 1rem;
+  }
+
+  .table-responsive {
+    height: 200px !important;
+    width: 250px !important;
   }
 }
+
 @media only screen and (min-width: 600px) {
-  .grid-sol{
+  .grid-sol {
     margin-top: 3rem;
+  }
+
+  .table-responsive {
+    height: 300px !important;
+    width: 300px !important;
   }
 }
